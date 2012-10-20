@@ -12,8 +12,20 @@ Sample Inputs & Outputs:
 Notes:
 This is a very easy problem if you use a specific primitive data-structure. """
 
-import JRStack
+from JRStack import Stack
 
 def bracketCheck(pString):
-    pass
-    
+    inBrace = "{[(<"
+    outBrace = "}])>"
+    bStack = Stack()
+    for c in pString:
+        if c in inBrace:
+            bStack.push(c)
+        elif c in outBrace:
+            print(bStack.peek())
+            if bStack.pop() != inBrace[outBrace.index(c)]:
+                return False
+    return True
+
+print(bracketCheck("{Hello}"))
+print(bracketCheck("World}"))

@@ -8,13 +8,7 @@ class Stack:
         self.data = [data] + self.data
     
     def pop(self):
-        res = None
-        if len(self.data) != 0: 
-            res = self.data.pop(0)
-        return res
+        return self.data.pop(0)
     
     def peek(self):
-        res = None
-        if len(self.data) != 0:
-            res = self.data[0]
-        return res
+        return self.data[0]
