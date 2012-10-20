@@ -1,0 +1,4 @@
+{"ts":1350712964248,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1350713070083,"patch":[[{"diffs":[[1,"\"\"\"My own implementation of a Stack\"\"\""]],"start1":0,"start2":0,"length1":0,"length2":38}]],"length":38,"saved":false}
+{"ts":1350713170622,"patch":[[{"diffs":[[0," a Stack"],[-1,"\"\"\""],[1," FILO Data Struct\"\"\"\n\nclass Stack:\n    def __init__(self):\n        self.data = []\n    \n    def push(self, data):\n        self.data = [data] + self.data\n    \n    def pop(self):\n        return self.data.pop(0)"]],"start1":27,"start2":27,"length1":11,"length2":215}]],"length":242,"saved":false}
+{"ts":1350713301363,"patch":[[{"diffs":[[0,"a.pop(0)"],[1,"\n    \n    def peek(self):\n        return self.data[0]"]],"start1":234,"start2":234,"length1":8,"length2":61}]],"length":295,"saved":false}
