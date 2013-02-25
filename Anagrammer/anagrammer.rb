@@ -7,7 +7,6 @@ def loadDict(dictFile, reg) # takes in a dictionary file and a block to check li
   res.sort_by {|x| -x.size }
 end # returns a list of valid words, reverse ordered by size (largest first)
 def solve(dictFile, anagram) # takes in a filename and a string of letters (the anagram)
-  filter = /^#{anagram.upcase.split('').sort.join('?')}?$/
-  puts filter
+  filter = /^#{parse(anagram, '?')}?$/
   res = loadDict(dictFile, filter )
 end # returns the largest valid word from the anagram
