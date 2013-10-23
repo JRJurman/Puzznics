@@ -1,7 +1,7 @@
 require './BoggleSolver.rb'
 
-grid = "BHRP,TNUY,EEOE,SRIM"
-dictionary = Dictionary.new("./dictionary.txt")
+grid = "OPSNE,TRLPA,SAYTO,JAGDN,DOMRL"
+dictionary = Dictionary.new("./dictionary.txt", grid)
 
 bb = BoggleBoard.new(grid)
 

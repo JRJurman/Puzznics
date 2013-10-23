@@ -113,7 +113,7 @@ class BoggleBoard
               '      . ', '     .  ', '    .   ', '   .    ',
               '  .     ', ' .      ']
 
-    16.times do 
+    while (words.size != 0)
       puts "#{(counter)}/16.0 passes\t#{words.size} words,\t#{solutions.size} solutions"
       #for every boggle solution
       words.each do |word|
@@ -133,7 +133,7 @@ class BoggleBoard
 
       end
       counter += 1
-    end #times loop
+    end
 
     solutions
 
